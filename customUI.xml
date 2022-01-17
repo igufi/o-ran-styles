@@ -1,0 +1,56 @@
+<!-- This markup adds a chunk and button to the insert tab 
+     When the button is clicked, "insertDocID" gets called. -->
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+	<ribbon>
+		<tabs>
+			<tab id="ORANStylesTab" insertBeforeMso="TabDeveloper" label="O-RAN styles" >
+				<group id="ORANHeadings" label="HEADINGS">
+					<button id="ORANH1" supertip="O-RAN style for Heading 1 clause" label="H1" size="normal" onAction="OranClause" /> 
+					<button id="ORANH2" supertip="O-RAN style for sub-clause (level 2)" label="H2" size="normal" onAction="SubClauseLevel1" /> 
+					<button id="ORANH3" supertip="O-RAN style for sub-clause (level 3)" label="H3" size="normal" onAction="SubClauseLevel2" /> 
+					<button id="ORANH4" supertip="O-RAN style for sub-clause (level 4)" label="H4" size="normal" onAction="SubClauseLevel3" /> 
+					<button id="ORANH5" supertip="O-RAN style for sub-clause (level 5)" label="H5" size="normal" onAction="SubClauseLevel4" /> 
+					<button id="ORANH8" supertip="O-RAN style for Annex" label="Annex" size="normal" onAction="AnnexTitleForStandards" />
+				</group>
+				<group id="ORANMisc" label="TEXT FORMATTING">
+					<button id="ORANNormal" supertip="O-RAN style for normal paragraph" label="Normal Text" onAction="OranStandardParagraph" />
+					<button id="ORANEX" supertip="O-RAN style for reference or example" label="Ref/Example" onAction="OranReferenceOrExample" />
+					<button id="ORANEW" supertip="O-RAN style used for abbreviation" label="Abbreviations" onAction="OranAbbreviations" />
+					<button id="ORANNO" supertip="O-RAN style for note" label="Note" onAction="OranNote" />
+					<button id="ORANPL"  supertip="O-RAN style for Programming Language (PL)" label="Code" onAction="OranProgrammingLanguage" />
+					<button id="ORANEQ"  supertip="O-RAN style for equation" onAction="OranEquation" label="Equation" />
+				</group>
+				<group id="ORANBullets" label="BULLETS AND LISTS">
+					<button id="ORANB1" imageMso="IndentClassic" label="Indent 0.5 " supertip="O-RAN style indent left 0.5 cm" onAction="OranB1" />
+					<button id="ORANB2" imageMso="IndentClassic" label="Indent 1.0 " supertip="O-RAN style indent left 1 cm" onAction="OranB2" />
+					<button id="ORANB3" imageMso="IndentClassic" label="Indent 1.5 " supertip="O-RAN style indent left 1.5 cm" onAction="OranB3" />
+					<button id="ORANB1P" imageMso="Bullets" label="Bullet 0.5" supertip="O-RAN style indent left 0.5 cm with bullet" onAction="OranBulletList1" />
+					<button id="ORANB2P" imageMso="Bullets" label="Bullet 1.0" supertip="O-RAN style indent left 1 cm with bullet" onAction="OranBulletList2" />
+					<button id="ORANB3P" imageMso="Bullets" label="Bullet 1.5" supertip="O-RAN style indent left 1.5 cm with bullet" onAction="OranBulletList3" />
+					<button id="ORANBL" imageMso="Bullets" label="Bulleted Letter" supertip="O-RAN style indent left 1 cm with bulleted letter" onAction="OranBulletLetter" />
+					<button id="ORANBN" imageMso="Numbering" label="Bulleted Number" supertip="O-RAN style indent left 0.5 cm with bulleted number" onAction="OranBulletNumber" />
+				</group>
+				<group id="ORANTitles" label="TITLES">
+					<button id="ORANFL" imageMso="TableDesign" label="Table/Figure" supertip="O-RAN style for table or figure layout" onAction="OranTableOrFigure" />
+					<button id="ORANTH" imageMso="QueryTableNamesShowHide" label="Table title" supertip="O-RAN style for table's title" onAction="THT" />
+					<button id="ORANTF" imageMso="ControlImage" label="Figure title" supertip="O-RAN style for figure's title" onAction="OranFigureTitle" />
+					<button id="ORANNF" imageMso="ControlImage" label="Figure note" supertip="O-RAN style for figure's note" onAction="OranFigureNote" />
+				</group>
+				<group id="ORANTable" label="TABLE FORMATTING">
+					<button id="ORANTAH" imageMso="TableInsert" label="Header" supertip="O-RAN style for table's header" onAction="OranTableHeader" />
+					<button id="ORANTAL" imageMso="AlignLeft" label="Normal" supertip="O-RAN style for table's cell (left alignment)" onAction="OranTableLeft" />
+					<button id="ORANTAJ" imageMso="AlignJustify" label="Justified" supertip="O-RAN style for table's cell (justified)" onAction="OranTableJustified" />
+					<button id="ORANTAC" imageMso="AlignCenter" label="Centered" supertip="O-RAN style for table's cell (centered)" onAction="OranTableCentered" />
+					<button id="ORANTAR" imageMso="AlignRight" label="Align right" supertip="O-RAN style for table's cell (right alignment)" onAction="OranTableRight" />
+					<button id="ORANTAN" imageMso="TextBoxInsert" label="Note" supertip="O-RAN style for table's note" onAction="OranTableNote" />
+					<button id="ORANTB1" imageMso="SmartArtAddBullet" label="Bullet" supertip="O-RAN style TAL (bullet)" onAction="OranTB1" />
+					<button id="ORANTB2" imageMso="SmartArtAddBullet" label="Dash" supertip="O-RAN style TAL (DASH indent)" onAction="OranTB2" />
+				</group>
+				<group id="ORANDrafting" label="DRAFTING TOOLS">
+					<button id="ORANEN" supertip="O-RAN style for Editor's Note" label="Editor's Note" onAction="OranEditorsNote" />
+				</group>
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
+
